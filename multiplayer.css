@@ -1,0 +1,130 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.gameSection {
+    width: 320px; /* Matches the width of the game grid */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 100%;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.cell {
+    font-family: "Action Man Shaded";
+    color: #39FF14;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 2px #39FF14;
+    border: 2px solid #39FF14;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.textBox {
+    font-family: "Action Man";
+    font-size: 24pt;
+    color: white;
+    background-color: #228B22;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 0 5px 0;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 1px;
+    margin-left: 15px;
+}
+
+.gameTitle{
+    font-family: "Action Man";
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.gameStatus {
+    font-family: "Action Man";
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+.gameRestart {
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    height: 25px;
+    width: 150px;
+    font-family: "Action Man";
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    line-height: 14px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.menuButton {
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    height: 25px;
+    width: 150px;
+    font-family: "Action Man";
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    line-height: 14px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.winningCell {
+    position: relative; /* Required to position the pseudo-element */
+}
+
+.winningCell::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 10px solid white; /* White border around the cell */
+    pointer-events: none; /* Prevents interaction with the pseudo-element */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe - Single Player</title>
+  <link rel="stylesheet" href="singleplayer.css">
+</head>
+<body>
+<section class="container">
+  <div class="textBox">
+    <h1 class="gameTitle"></h1>
+  </div>
+
+  <div class="gameWrapper">
+    <div class="buttonContainer">
+      <button class="difficultyButton" onclick="setDifficulty('Easy')">Easy</button>
+      <button class="difficultyButton" onclick="setDifficulty('Hard')">Hard</button>
+    </div>
+
+    <div class="gameContainer">
+      <div data-cell-index="0" class="cell"></div>
+      <div data-cell-index="1" class="cell"></div>
+      <div data-cell-index="2" class="cell"></div>
+      <div data-cell-index="3" class="cell"></div>
+      <div data-cell-index="4" class="cell"></div>
+      <div data-cell-index="5" class="cell"></div>
+      <div data-cell-index="6" class="cell"></div>
+      <div data-cell-index="7" class="cell"></div>
+      <div data-cell-index="8" class="cell"></div>
+    </div>
+  </div>
+  <div class="textBox">
+    <h2 class="gameStatus"></h2>
+  </div>
+  <div class="menuButtonContainer">
+    <a href="index.html"><button class="menuButton">Main Menu</button></a>
+    <button class="gameRestart">Restart Game</button>
+  </div>
+</section>
+<script src="singleplayer.js"></script>
+</body>
+</html>

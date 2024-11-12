@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+section {
+    text-align: center;
+}
+
+.textBox {
+    font-family: "Action Man";
+    color: white;
+    background-color: #228B22;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.button {
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    height: 30px;
+    width: 200px;
+    font-family: "Action Man";
+    background-color: #228B22;
+    color: white;
+    text-align: center;
+    line-height: 12px;
+    cursor: pointer;
+    font-size: 14pt;
+}
